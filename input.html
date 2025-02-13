@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Inputs Page</title>
+</head>
+<body>
+
+    <h2>Form with Different Input Types</h2>
+
+    <form  method="get">
+        <label>User Name:</label><br>
+        <input type="text" value="raghad" name="user"><br><br>
+
+        <label>Number:</label><br>
+        <input type="number"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email"><br><br>
+
+        <label>Phone:</label><br>
+        <input type="tel"><br><br>
+
+        <label>Date:</label><br>
+        <input id="date" type="date"><br><br>
+
+        <label>Month:</label><br>
+        <input type="month" id="month"><br><br>
+
+        <label>Time:</label><br>
+        <input type="time" id="time"><br><br>
+
+        <label>Week:</label><br>
+        <input type="week" id="week"><br><br>
+
+        <input type="submit" value="Click">
+    </form>
+
+    <hr>
+
+    <h2>Login Form</h2>
+
+    <form method="post">
+        <fieldset>
+            <legend>Login</legend>
+
+            <label for="txt" >User Name:</label>
+            <input id="txt"  type="text" placeholder="User Name" required><br><br>
+
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" placeholder="Password" required><br><br>
+
+            <label for="datetime">Date & Time:</label>
+            <input type="datetime-local" id="datetime"><br><br>
+
+            <h5>What is your favorite language?</h5>
+            <input type="radio" value="html" id="html" name="lang">
+            <label for="html">HTML</label><br>
+
+            <input type="radio" value="css" id="css" name="lang">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" value="javascript" id="javascript" name="lang">
+            <label for="javascript">JavaScript</label><br>
+
+            <h5>Choose multiple languages:</h5>
+            <input type="checkbox" value="html" id="html2" name="lang">
+            <label for="html2">HTML</label><br>
+
+            <input checked type="checkbox" value="css" id="css2" name="lang">
+            <label for="css2">CSS</label><br>
+
+            <input type="checkbox" value="javascript" id="javascript2" name="lang">
+            <label for="javascript2">JavaScript</label><br><br>
+
+            <label for="cant">What is your country?</label>
+            <select name="country" id="cant" multiple>
+                <optgroup label="Section 1">
+                    <option value="egy">Egypt</option>
+                    <option selected value="mor">Morocco</option>
+                    <option value="alg">Algeria</option>
+                </optgroup>
+                <optgroup label="Section 2">
+                    <option value="jor">Jordan</option>
+                    <option selected value="uae">UAE</option>
+                    <option value="usa">USA</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="language">Choose a programming language:</label>
+            <input list="language" name="lang">
+            <datalist id="language">
+                <option value="C">
+                <option value="C#">
+                <option value="C++">
+                <option value="Python">
+                <option value="Java">
+                <option value="JavaScript">
+            </datalist><br><br>
+
+            <input type="submit" value="Click">
+        </fieldset>
+    </form>
+    <br>
+    <hr>
+    <table border="1">
+        <caption><b> عناصر الإدخال (Inputs)</b></caption>
+        <thead>
+            <tr>
+                <th>نوع الإدخال (type)</th>
+                <th>الوصف</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>text</td>
+                <td>يستخدم لإدخال نصوص قصيرة مثل الأسماء أو العناوين.</td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td>يستخدم لإدخال أرقام فقط، يمكن تعيين حد أدنى وأقصى.</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>يستخدم لإدخال كلمة مرور، حيث يتم إخفاء الأحرف بنقاط أو نجوم.</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>يقبل إدخال بريد إلكتروني فقط ويتحقق من صحة التنسيق.</td>
+            </tr>
+            <tr>
+                <td>tel</td>
+                <td>يستخدم لإدخال أرقام الهواتف، لكنه لا يفرض تنسيقًا معينًا.</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>زر لإرسال البيانات إلى الخادم.</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>يسمح باختيار تاريخ معين من تقويم.</td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td>يسمح باختيار شهر وسنة فقط بدون يوم معين.</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>يستخدم لاختيار وقت معين (ساعة ودقيقة).</td>
+            </tr>
+            <tr>
+                <td>week</td>
+                <td>يستخدم لاختيار أسبوع معين من السنة.</td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td>يستخدم لاختيار تاريخ ووقت معًا.</td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td>يسمح باختيار خيار واحد فقط من مجموعة.</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td>يسمح باختيار عدة خيارات من مجموعة.</td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td>قائمة منسدلة لاختيار خيار واحد أو أكثر.</td>
+            </tr>
+            <tr>
+                <td>datalist</td>
+                <td>قائمة مقترحة تظهر أثناء الكتابة في حقل إدخال.</td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>
